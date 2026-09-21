@@ -55,7 +55,7 @@ Create Post
 - Delete your own post
 - View posts
 - Upload images
-- Like/unlike posts
+- Like/Unlike posts
 - Comment on posts
 - Repost/retweet posts
 - Display post creation time

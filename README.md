@@ -618,7 +618,7 @@ The application implements or can implement:
 
 ---
 
-📚 What I Learned
+📚 What I Learned from it.
 
 Through this project, I practiced:
 

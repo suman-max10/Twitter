@@ -7,7 +7,7 @@ const app = express();
 dotenv.config();
 
 const PORT = process.env.PORT || 8000;
-
+app.use("/api/auth", router);
 app.get("/", (req, res) => {
   res.send("Server is Ready");
 });

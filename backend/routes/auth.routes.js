@@ -7,6 +7,13 @@ router.get("/signup",(req,res)=>{
         data:"You hit the Signup Endpoint",
        
     });
+
+
+    router.get("/login",(req,res)=>{
+        res.json({
+            data:"You hit the login",
+        })
+    })
    
 });
 

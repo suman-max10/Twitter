@@ -10,6 +10,9 @@ dotenv.config();
 console.log(process.env.MONGO_URI);
 
 const PORT = process.env.PORT || 8000;
+
+app.use(express.json());// to pass req.body
+
 app.use("/api/auth", router);
 app.get("/", (req, res) => {
   res.send("Server is Ready");

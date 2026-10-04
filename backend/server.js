@@ -2,7 +2,8 @@
 
 import express from "express";
 import dotenv from "dotenv";
-import router from "./routes/auth.routes.js";
+import authRouter from "./routes/auth.routes.js";
+import userRouter from "./routes/user.routes.js";
 import connectMongodb from "./db/connectMongodb.js";
 const app = express();
 dotenv.config();
@@ -13,7 +14,8 @@ const PORT = process.env.PORT || 8000;
 
 app.use(express.json());// to pass req.body
 
-app.use("/api/auth", router);
+app.use("/api/auth", authRouter);
+app.use("/api/users", userRouter);
 app.get("/", (req, res) => {
   res.send("Server is Ready");
 });
